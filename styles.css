@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-color: #cf6a87;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 9rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-container {
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.note-card {
+  width: 20vw;
+  height: 40vh;
+  background-color: #ffff;
+  margin: 3rem;
+}
+
+.toolbar {
+  height: 2rem;
+  width: auto;
+  background-color: #303952;
+  color: #ffff;
+  display: flex;
+  justify-content: end;
+}
+
+.icons {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.note-card textarea {
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.note-card textarea :focus {
+  border: 0;
+  outline: 0;
+}
+
+.add-btn {
+  height: 2rem;
+  width: 8rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #596275;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .main {
+    padding-left: 4rem;
+  }
+
+  .note-card {
+    height: 30vh;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding-left: 0;
+  }
+
+  .heading-container {
+    font-size: 1.5rem;
+  }
+
+  .add-btn {
+    width: 6rem;
+  }
+
+  .note-card {
+    height: 50vh;
+    width: 90%;
+  }
+}
